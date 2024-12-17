@@ -5,7 +5,6 @@ import { ActionResult } from "@/types";
 import { cookies } from "next/headers";
 
 export async function Logout(): Promise<ActionResult> {
-    console.log("logout");
 
     const { session } = await getUser();
     if (!session) {
